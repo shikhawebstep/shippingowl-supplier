@@ -1,4 +1,6 @@
-import { createContext, useState, useContext, useEffect, useCallback } from "react";
+"use client"
+
+import { createContext, useState, useContext, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import Swal from "sweetalert2";
 
@@ -6,8 +8,9 @@ const DropshipperMiddleWareContext = createContext();
 
 export const useDropshipper = () => {
     const context = useContext(DropshipperMiddleWareContext);
+    console.log('context',context)
     if (!context) {
-        throw new Error("useAdmin must be used within an DropshipperMiddleWareProvider");
+        throw new Error("useDropshipper must be used within an DropshipperMiddleWareProvider");
     }
     return context;
 };

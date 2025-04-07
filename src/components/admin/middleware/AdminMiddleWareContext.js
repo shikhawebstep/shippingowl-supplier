@@ -1,4 +1,6 @@
-import { createContext, useState, useContext, useEffect, useCallback } from "react";
+"use client"
+
+import { createContext, useState, useContext, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import Swal from "sweetalert2";
 

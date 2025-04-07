@@ -9,7 +9,7 @@ import PotentialHeros from './PotentialHeros'
 import React, { useEffect } from 'react'
 
 const Home = () => {
-    const { verifyDropShipperAuth } = useDropshipper();
+    const  {verifyDropShipperAuth}  = useDropshipper();
     useEffect(() => {
         verifyDropShipperAuth();
     }, [verifyDropShipperAuth]);

@@ -1,10 +1,15 @@
-import Login from '@/components/admin/Login'
+import LoginForm from '@/components/admin/LoginForm'
+import AdminMiddleWareProvider from '@/components/admin/middleware/AdminMiddleWareContext'
 import React from 'react'
 
 function page() {
     return (
         <>
-            <Login />
+        <AdminMiddleWareProvider>
+
+        <LoginForm />
+        </AdminMiddleWareProvider>
+            
         </>
     )
 }

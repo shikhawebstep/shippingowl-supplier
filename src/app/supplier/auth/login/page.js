@@ -1,7 +1,7 @@
-import Login from '@/components/supplier/Login'
+import LoginForm from '@/components/supplier/LoginForm'
 const page = () => {
   return (
-    <Login />
+<LoginForm/>
   )
 }
 

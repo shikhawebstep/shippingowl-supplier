@@ -1,10 +1,10 @@
-import Login from '@/components/dropshipping/Login'
+import LoginForm from '@/components/dropshipping/LoginForm'
 import React from 'react'
 
 function page() {
     return (
         <>
-            <Login />
+      <LoginForm/>
         </>
     )
 }

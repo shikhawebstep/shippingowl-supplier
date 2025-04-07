@@ -1,10 +1,13 @@
 import Home from '@/components/dropshipping/home/Home'
-import React from 'react'
+import DropshipperMiddleWareProvider from '@/components/dropshipping/middleware/DropshipperMiddleWareContext'
 
 export default function page() {
   return (
     <>
-      <Home />
+      <DropshipperMiddleWareProvider>
+        <Home />
+      </DropshipperMiddleWareProvider>
+
     </>
   )
 }

@@ -1,3 +1,5 @@
+"use client"
+
 import { createContext, useState, useContext, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import Swal from "sweetalert2";
@@ -72,7 +74,7 @@ export default function SupplierMiddleWareProvider({ children }) {
         } finally {
             setLoading(false);
         }
-    }, []);
+    }, [router]);
 
     // ✅ Run verifyDropShipperAuth when adminToken changes
 

@@ -71,7 +71,7 @@ export default function Sidebar() {
             children: [
                 { name: "Manage Orders", icon: ShoppingCart, href: "/admin/dropshipper/manage-orders" },
                 { name: "Manage Products", icon: Package, href: "/admin/dropshipper/manage-products" },
-                { name: "Source a Product", icon: Gift, href: "/admin/dropshipper/source-a-product" },
+                { name: "Source a Product", icon: Gift, href: "/admin/dropshipper/source-a-products" },
                 { name: "Reports", icon: BarChart, href: "/report" },
                 { name: "Payments", icon: CreditCard, href: "#" },
                 { name: "Manage NDR", icon: FileText, href: "#" },
