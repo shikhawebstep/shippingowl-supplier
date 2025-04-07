@@ -8,8 +8,8 @@ const nextConfig = {
 
     output: "export", // ✅ Enables static export mode
 
-    basePath: "/demo/ShippingOwl", // ✅ Sets the base path for the app
-    assetPrefix: "/demo/ShippingOwl/", // ✅ Ensures assets load from the correct path
+    basePath: "", // ✅ Sets the base path for the app
+    assetPrefix: "/", // ✅ Ensures assets load from the correct path
 };
 
 module.exports = nextConfig; // ✅ Correct way to export config
