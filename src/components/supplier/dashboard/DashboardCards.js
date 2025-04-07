@@ -1,6 +1,6 @@
 "use client";
 import { Info } from "lucide-react";
-import icon from '@/app/images/icon.png';
+import icon from '@/app/images/Icon.png';
 import Image from "next/image";
 const cardData = [
   {

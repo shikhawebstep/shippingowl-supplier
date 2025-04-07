@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import Image from 'next/image';
 import { Navigation } from 'swiper/modules';
-import productimg from '@/app/assets/img.png';
+import productimg from '@/app/assets/product.png';
 import product1img from '@/app/assets/watch.png';
 import product2img from '@/app/assets/watch2.png';
 import { FaCalculator } from "react-icons/fa";
