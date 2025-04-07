@@ -2,10 +2,9 @@
 
 import { useState } from 'react';
 import img from '@/app/assets/image-badge.png'
-import Image from 'next/image';
 import { IoCloseOutline } from "react-icons/io5";
 import { FaPlus } from "react-icons/fa6";
-
+import { Image } from 'next/image';
 const SourceProductForm = () => {
     const [image, setImage] = useState(null);
 
@@ -62,7 +61,7 @@ const SourceProductForm = () => {
                     <label htmlFor="" className='text-[#777980] block mt-1'>Photo</label>
                     <div className="border-dashed border-2 border-gray-300 bg-[#F9F9FC] rounded-xl p-6 flex flex-col items-center justify-center text-gray-500 mt-3">
                         {image ? (
-                            <img src={image} alt="Uploaded" className="w-32 h-32 object-cover rounded-xl" />
+                            <Image src={image} alt="Uploaded" className="w-32 h-32 object-cover rounded-xl" />
                         ) : (
                             <>
                                 <Image src={img} alt="Image Gallary" className='p-3' />

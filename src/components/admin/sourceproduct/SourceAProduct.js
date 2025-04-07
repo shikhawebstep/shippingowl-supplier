@@ -4,14 +4,14 @@ import img from '@/app/assets/image-badge.png'
 import Image from 'next/image';
 import { IoCloseOutline } from "react-icons/io5";
 import { FaPlus } from "react-icons/fa6";
-
+import { Image } from 'next/image';
 const SourceAProduct = () => {
-    const [image, setImage] = useState(null);
+    const [images, setImages] = useState(null);
 
     const handleImageUpload = (event) => {
         const file = event.target.files[0];
         if (file) {
-            setImage(URL.createObjectURL(file));
+            setImages(URL.createObjectURL(file));
         }
     };
 
@@ -68,8 +68,8 @@ const SourceAProduct = () => {
                     <h3 className="text-lg font-semibold">Product Image</h3>
                     <label htmlFor="" className='text-[#777980] block mt-1'>Photo</label>
                     <div className="border-dashed border-2 border-gray-300 bg-[#F9F9FC] rounded-xl p-6 flex flex-col items-center justify-center text-gray-500 mt-3">
-                        {image ? (
-                            <img src={image} alt="Uploaded" className="w-32 h-32 object-cover rounded-xl" />
+                        {images ? (
+                            <Image src={images} alt="Uploaded" className="w-32 h-32 object-cover rounded-xl" />
                         ) : (
                             <>
                                 <Image src={img} alt="Image Gallary" className='p-3' />
